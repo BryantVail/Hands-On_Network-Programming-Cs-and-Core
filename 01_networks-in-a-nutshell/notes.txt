@@ -1,0 +1,282 @@
+//Chapter 01, Networks in a Nutshell
+chapter: {
+    name: networksInANutshell, 
+    description: "overview of networks; types, requirements, elements.",
+    sections: [
+        {
+            name: "Topologies and Physical Infrastructure",
+            description: "How networks are implemented; Logical & Physical topology",
+            sections: [
+                {
+                    name: "Physical-and-Logical-Topologies",
+                    description: "describes how the components of that network are arranged relative to one another",
+                    notes: [
+
+                    ],
+                    aspects: [
+                        {
+                            name: "physical-topology",
+                            notes: [
+                                "how a net is physically connected & organized in 'real space'",
+                                "describes the medium; connections",
+                                "location of devices",
+                                "layout of conns between nodes",
+                                "network-devices determine -in part- what connections are available",
+                                "determines: performance, resilience, & security; limitations & maximums",
+                                "One Firewall Node vs Multiple",
+                                "Physical Topology: identifies connections as wired || wireless. Opposed to 'link' or 'connection'",
+
+                            ],
+                            aspects: [
+                                {
+                                    name: "equipment", 
+                                    description: "switches, routers, bridges, NICs (Network Interface Controllers)"
+                                    notes: [
+                                        "some or all of them may be present on a given implementation",
+
+                                    ]
+                                }
+                            ]
+                        },//end physical topology
+                        {
+                            name: "logical topology",
+                            description: 
+                                "Explains the conceptual organization of relevant actors on the network; the connective paths in which they 'can' or 'must' communicate with any other actors on the network",
+                            notes: [
+                                "physical topologies don't necessarily map directly to the Logical Model",
+                                "this book deals in 'logical topology'",
+                                "consider logically: what resources we need, or resources to provide=> how to meet those needs"
+                            ],
+                            aspects: [
+
+                            ]
+                        }
+                    ]
+                },
+                {
+                    name: "Point-to-Point Topology",
+                    description: "logical connection between two nodes on a network",
+                    notes: [
+                        " 'minimum complete network'; at least one connection between at least two nodes ",
+                        "lowest cost",
+                        "lowest impact on engineering considerations",
+                        "benefits are relatively low also",
+                        "communication-session on a more complicated 'logical-network' is still an instance of a logical 'point-to-point'",
+                    ],
+                    aspects: [
+
+                    ]
+                },
+                {
+                    name: "Linear-Topology",
+                    description: "a line; most primitive extension of 'point-to-point'.",
+                    notes: [
+                        "one of the simplest topologies", 
+                        "one node 'at most' connected to two other nodes at a given time",
+                        "benefit: cost",
+                        "detriment: poor resiliency; turns into a 'one-way' comms network at best if a link of the 'daisy-chain' is broken",
+                        "passes the request along to the neighbor that 'DID NOT' send the message to the given terminal",
+                        "detriment: tight coupling of nodes",
+
+                    ],
+                    aspects: [
+
+                    ]
+                },
+                {
+                    name: "bus topology",
+                    description: "every node on the network is connected to another by way of a common channel of comms",
+                    notes: [
+                        "each node on the bus is responsible for knowing if the given message or packet is for them",
+                        "packets must have information on who the message is going to in relation to the bus",
+                        "bandwidth is limited by the single channel",
+                        "single point of failure comes with the single channel of comms"
+                    ],
+                    aspects: [
+
+                    ]
+                },
+                {
+                    name: "star topology",
+                    description: "each peripheral node connected by a single channel to a central 'hub-node'",
+                    notes: [
+                        "failures are isolated to the channel of a given node",
+                        "hub goes down, system to communicate goes down",
+                        "sub-topologies interact to create an additional type of topology; point-to-point combined at each node to the hub to create the star topology",
+                        "compositional topologies"
+                    ],
+                    aspects: [
+                        {
+                            name: "hub",
+                            description: "broker of communication between all peripheral nodes via 'point-to-point' connections",
+                            notes: [
+                                "failures are isolated to the channel of a given node",
+                                "hub goes down, system to communicate goes down"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    name: "Ring Topology",
+                    description: 
+                        "Unidirectional 'linear topology'; each single node has connection with two other nodes (at most?), but only sends messages in one direction",
+                    notes: [
+                        "benefit: no request broker needed',
+                        "benefit: lowers management costs if appropriate",
+                        "detriment: one chain link broken leaves the network useless as a two way comms medium",
+                        "max-performance: determined by the SLOWEST link in the chain"
+                    ],
+                    aspects: [
+
+                    ]
+                },
+                {
+                    name: "Mesh Toplogy",
+                    description: 
+                        "non-formal topology where some nodes are connected by way of a single 'point-to-point' connection to some other nodes- and some may have multiple connections to multiple nodes",
+                    notes: [
+                        "most resilient & common network topologies in use today; almost entirely arbitrary in its organization.",
+                        "form: so long it does not fully implement any of the other topologies; no 'obvious specification'",
+                        "can-include: networks w/an arbitrary degree of connectivity between nodes- up to & including 'fully-connected-Mesh' network",
+                    ],
+                    aspects: [
+                        {
+                            name: "fully-connected-mesh",
+                            description: "every node has a direct connection to every other node; no terribly scalable",
+                            notes: [
+                                "detriment: not very scalable; quadratic increase in connections for each new node",
+                                "benefit: most resilient, and stable; no node has responsibility of packet-forwarding or request-switching; all nodes have direct connection to each on the network- so direct messages are available",
+                                "full connectivity is not reliant on one node",
+                                "prohibitively expensive",
+
+                            ],
+                            aspects: [
+
+                            ]
+                        }
+                    ]
+                },
+                {
+                    name: "hybrid and specialized topologies",
+                    description: 
+                        "most networks are composed of multiple topologies. eg: star topology; where peripheral nodes link using linear topology individually to facilitate the more complex makeup of the star.",
+                    notes: [
+
+                    ],
+                    aspects: [
+                        {
+                            name: tree-topology, 
+                            description: 
+                                "node of a linear net topology is also the access-point to a secondary linear-topology; hierarchical-linear-topology"
+                        }
+                    ]
+                }
+            ]//end section.sections
+        },//end section 
+        {
+            name: "the software impact of distributing resources on a network",
+            description: "", 
+            sections: [
+                {
+                    name: "security",
+                    description: "most obvious & complicated",
+                    notes: [
+                        "securing is a moving target; takes vigilence", 
+                        "ethical obligation",
+                        "can't be sure that upstream access to the network is secure",
+                        "only see: process req's on access points to the software [that one takes part in building]",
+                        "request-sanitizing-algorithms in use to mitigate what may be in the body of a message",
+                        "know what 'using' statements to have"
+                    ],
+                    aspects: [
+                        {
+                            name: "open communication", 
+                            notes: [
+                                "may get a number of mal-formed req's that attempt to be parsed before determining they can't be read.",
+                                "need to first read: exposes one to malicious commands or codes",
+                            ]
+                        }
+                    ]
+                },
+                {
+                    name: "communicationOverhead",
+                    description: " 'OTHER' most obvious concern ",
+                    notes: [
+                        "spend substantial time familiarizing with specific messaging standards of different comms protocols (which is covered in this book)",
+                        "headers: telling the software when to stop reading from the connection (etc)",
+                        "locally hosted code: 
+                            benefit of DLLs of libraries among consumer apps to facilitate a shared contract for data structures,
+                            use file-access APIs to expose nuts & bolts of data in a message, 
+                        ",
+                        "network: context has to be given with the message itself", 
+                    ],
+                    aspects: [
+                        {
+                            name: "headers",
+                            notes: [
+                                "informs software on when to stop reading from the connection to get the full & uninterupted binary stream",
+                                "convert the binary stream back into meaningful data structures"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    name: "Resilience", 
+                    description: "reliability of the connection; access to the resource that addresses common or necessary faults.",
+                    notes: [
+                        "address moments where network resources may not be available",
+                        "consider if the software being built is a dependency for other systems",
+                    ],
+                    aspects: [
+
+                    ]
+                },
+                {
+                    name: "Asynchrony",
+                    description: 
+                        "the concept of processing the result of a request that is not provided by the code internal to your system- when that result becomes available",
+                    notes: [
+                        "ties in with resiliency",
+                        "most presently in UIs where the input should be dealt with while also leaving the UI with the user still able to interact & raise additional events"
+                    ],
+                    aspects: [
+                        {
+                            name: 'round-trip-time',
+                            notes: [
+                                "technically could lock the program in this time",
+                                "Major Key to 'reasonably performing network software'",
+                            ]
+                        }
+                    ]
+                }
+            ]//end section.sections
+        },
+
+        
+    ]//end sections
+}//end 01_chapter
+
+
+
+
+
+
+
+//Sumary & Questions
+    1. What is the definition of a network?
+    2. What is the difference between a physical and logical topology?
+    3. Which was the only network topology discussed in this chapter that is not exposed to a potential single point of failure?
+    
+    4. What are some of the physical devices that implement channels of communication on a network? What physical devices serve as nodes?
+    5. What is the root namespace for the most common networking libraries and classes provided by .NET Core?
+        a. "System.Net"
+            i. System.Net.Http 
+            ii.System.Net.NetworkInformation 
+            iii.System.Net.Security
+            iv. System.Net.Sockets
+    6. Name at least four classes exposed by the System.Net namespace.
+        a. "WebRequest",
+        b. "WebResponse",
+        c. "FtpWebRequest",
+        d. "HttpWebRequest"
+    7. What are the four other most commonly used namespaces provided by .NET Core for reliable and stable network programming?
