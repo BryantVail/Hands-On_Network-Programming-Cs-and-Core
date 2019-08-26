@@ -799,13 +799,49 @@
                                     desc: ""
                                 }
                             ]
+                        },
+                        {
+                            name: "Hosts - domain names and IPs",
+                            desc: "Hosts are either the domainName or an IP",
+                            notes: [
+                                "this chapter will only concern domainNames and how they're resolved by the DNS",
+                            ],
+                            aspecs: [
+                                {
+                                    name: "Host component",
+                                    desc: "domainName or IpAddress",
+                                    notes: [
+                                        "these options are interchangeable",
+                                    ]
+                                },
+                                {
+                                    name: "DNS (Domain Name System)",
+                                    desc: "distributed, decentralized network of 'Authoritative Servers' that hosts a directory of all sub-domain servers, as well as, any domain names that can be resolved by the server.",
+                                    notes: [
+                                        "valid domain names are added to the distributed registry hosted by authoritative servers.",
+                                        "any domain name that has been registered with a certified domain name registrar- which meets syntax standards and hasn't been registered, is valid.",
+                                        "Each server inspects the domain name given and looks for the IP mapped to the domain requested- subsequently checking 'subordinate servers' if necessary; if the server cannot resolve, it forwards it up the hierarchy of name servers to a more general 'parent domain'- until reaching the 'root' server or the name is resolved."
+                                    ],
+                                    aspects: [
+                                        {
+                                            value: "distributed",
+                                        },
+                                        {
+                                            name: "Decentralized network",
+                                        }
+                                    ]
+                                }
+                            ]
                         }
                     ],//end sections
                     examples: [
                         {
                             number: 1,
+                            section: "The URL as a sub-type of the URI",
                             name: "build a URI",
-                            desc: "use 'public Uri GetSimpleUri()', and create a URI instance"
+                            desc: "use 'public Uri GetSimpleUri()', and create a URI instance; the factory removes the necessity for developers to keep the fine details of 'delimiters, prefixes, and suffixes' in our heads",
+                            result: "http://packt.com/",
+                            takeaway: "use the 'constructor overloads' whenever possible; shrinks 'code height' and makes our intentions explicit when instantiating - be more explicit in code when possible."
                         }
                     ]
                 }
