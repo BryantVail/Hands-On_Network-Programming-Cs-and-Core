@@ -1,5 +1,5 @@
 //Chapter 01, Networks in a Nutshell
-{
+({
     mediaType: book, 
     chapters: [
         {
@@ -11,7 +11,7 @@
                 "components of a network- and arranging of those components",
                 "impact of device variability, latency, instability, standardization on networks",
                 "concepts, terms, data structures used for network programming- and how those are exposed by .net-core"
-            ]
+            ],
             sections: [
                 {
                     name: "Expanding The Scope of Software - distributed systems and the challenges they introduce",
@@ -114,7 +114,7 @@
                                     description: "common standard of communication to facilitate the receiving to one's sending; don't scream into the void.",
                                     notes: [
                                         "W3C, World Wide Web Consortium",
-                                        "ISO, International Standards Organization"
+                                        "ISO, International Standards Organization",
                                         "Common Standards: TCP, UDP, HTTP",
                                         "addressing & naming standards: IpAddressing, DNS or Domain Naming System"
                                     ],
@@ -153,7 +153,7 @@
                                     aspects: [
                                         {
                                             name: "equipment", 
-                                            description: "switches, routers, bridges, NICs (Network Interface Controllers)"
+                                            description: "switches, routers, bridges, NICs (Network Interface Controllers)",
                                             notes: [
                                                 "some or all of them may be present on a given implementation",
 
@@ -244,7 +244,7 @@
                             description: 
                                 "Unidirectional 'linear topology'; each single node has connection with two other nodes (at most?), but only sends messages in one direction",
                             notes: [
-                                "benefit: no request broker needed',
+                                "benefit: no request broker needed",
                                 "benefit: lowers management costs if appropriate",
                                 "detriment: one chain link broken leaves the network useless as a two way comms medium",
                                 "max-performance: determined by the SLOWEST link in the chain"
@@ -327,10 +327,7 @@
                             notes: [
                                 "spend substantial time familiarizing with specific messaging standards of different comms protocols (which is covered in this book)",
                                 "headers: telling the software when to stop reading from the connection (etc)",
-                                "locally hosted code: 
-                                    benefit of DLLs of libraries among consumer apps to facilitate a shared contract for data structures,
-                                    use file-access APIs to expose nuts & bolts of data in a message, 
-                                ",
+                                "locally hosted code: benefit of DLLs of libraries among consumer apps to facilitate a shared contract for data structures, use file-access APIs to expose nuts & bolts of data in a message",
                                 "network: context has to be given with the message itself", 
                             ],
                             aspects: [
@@ -462,27 +459,73 @@
                     name: "Summary + Questions",
                     questions: [
                         //Sumary & Questions
-                            1. What is the definition of a network?
-                                a. An Arbitrarily large set of computational or navigational devices, connected by channels of communication accross which computational resources can be reliably: sent, received, forwarded, or processed. 
-                            2. What is the difference between a physical and logical topology?
-                            3. Which was the only network topology discussed in this chapter that is not exposed to a potential single point of failure?
-                                a. Mesh Network 
-                            4. What are some of the physical devices that implement channels of communication on a network? What physical devices serve as nodes?
-                                a. nodes: 
-                                    i. Routers & switches; nodes that do not offer a resource but facilitate communication on a network.
-                                    ii.Atomic devices on the network
-                            5. What is the root namespace for the most common networking libraries and classes provided by .NET Core?
-                                a. "System.Net"
-                                    i. System.Net.Http 
-                                    ii.System.Net.NetworkInformation 
-                                    iii.System.Net.Security
-                                    iv. System.Net.Sockets
-                            6. Name at least four classes exposed by the System.Net namespace.
-                                a. "WebRequest",
-                                b. "WebResponse",
-                                c. "FtpWebRequest",
-                                d. "HttpWebRequest"
-                            7. What are the four other most commonly used namespaces provided by .NET Core for reliable and stable network programming?
+                        {
+                            number: 1,
+                            name: "What is the definition of a network?",
+                            answer: "a. An Arbitrarily large set of computational or navigational devices, connected by channels of communication accross which computational resources can be reliably: sent, received, forwarded, or processed."
+                        },
+                        {
+                            number: 2,
+                            name: "What is the difference between a physical and logical topology?",
+                            answer: ""
+                        },
+                        {
+                            number: 3,
+                            name: "Which was the only network topology discussed in this chapter that is not exposed to a potential single point of failure?",
+                            answer: "Mesh Network"
+                        },
+                        {
+                            number: 4,
+                            name: "What are some of the physical devices that implement channels of communication on a network? What physical devices serve as nodes?",
+                            answer: {
+                                primary: "nodes",
+                                aspects: [
+                                    {
+                                        name: "Routers and Switches",
+                                        desc: "nodes that do not offer a resource but facilitate communication on a network",
+                                    },
+                                    "Atomic Devices on the network"
+                                ]
+                            },
+                        },
+                        {
+                            number: 5, 
+                            name: "What is the root namespace for the most common networking libraries and classes provided by .NET Core?",
+                            answer: {
+                                primary: "System.Net",
+                                aspects: [
+                                    {
+                                        name: "System.Net.Http"
+                                    },
+                                    {
+                                        name: "System.Net.NetworkInformation"
+                                    },
+                                    {
+                                        name: "System.Net.Security"
+                                    },
+                                    {
+                                        name: "System.Net.Sockets"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            number: 6,
+                            name: "Name at least four classes exposed by the System.Net namespace",
+                            answer: [
+                                "WebRequest",
+                                "WebResponse",
+                                "FtpWebRequest",
+                                "HttpWebRequest"
+                            ]
+                        },
+                        {
+                            number: 7,
+                            name: "What are the four other most commonly used namespaces provided by .NET Core for reliable and stable network programming?",
+                            answer: {
+                                primary: "",
+                            }
+                        }
                     ]
                 }//end section: "Summary + Questions"
             ]//end sections
@@ -495,7 +538,7 @@
                 "distributing resources &&& being able to access them accross the network",
                 "systems & standards that make it possible",
                 "code will be written"
-            ]
+            ],
             topics: [
                 "how data & services are exposed & made available on everything from wi-fi to the internet",
                 "specific standards used to identify resources at different levels of the network; URLs & domain names, to device names & local directory access",
@@ -641,7 +684,7 @@
                                             name: "body",
                                             description: "access credentials, user information",
                                             notes: [
-                                                "if this element is included, the values are delimited by a colon (":"), and separated from the rest of the authority component with an '@' Sign (aroba)",
+                                                "if this element is included, the values are delimited by a colon (\":\"), and separated from the rest of the authority component with an '@' Sign (aroba)",
                                                 "always includes a 'host-domain'; host-domain follows '//' or in the event of 'access credentials', the '@' delimiter",
                                             ]
                                         },
@@ -729,25 +772,56 @@
                             notes: [
                                 "URI; Uniform Resource Identifier",
                                 "URL; Uniform Resource Locator",
-                                
+                                "uri & url difference: a simple URI, assumes an ability to identify it- that is to distinguish the resource from any other arbitrary resource; whereas a URL designates an identity for a resource",
+                                "URL is ALWAYS a URI",
+                                ".NET classes refer to the more generic 'URI' specificaiton"
                             ],
                             aspects: [
                                 {
                                     name: "URL, Uniform Resource Locator",
                                     description: "kind of URI; guaranteed to be able to identify &&& locate a requested resource"
-                                }
+                                },
                                 {
                                     name: "URI, Uniform Resource Identifier",
-                                    description: "guaranteed to distinguish the resource from any other arbitrary resource""
+                                    description: "guaranteed to distinguish the resource from any other arbitrary resource"
                                 }
                             ]
+                        },
+                        {
+                            name: "The System.Net.UriBuilder class",
+                            desc: "factory class for generating instances of the Uri class",
+                            notes: [
+                                "provides users with several 'overloaded constructors' to allow the specification of more of the components of a valid URL progressively",
+                            ],
+                            aspects: [
+                                {
+                                    name: "",
+                                    desc: ""
+                                }
+                            ]
+                        }
+                    ],//end sections
+                    examples: [
+                        {
+                            number: 1,
+                            name: "build a URI",
+                            desc: "use 'public Uri GetSimpleUri()', and create a URI instance"
                         }
                     ]
                 }
             ]
-        }//end 02_chapter, "DNS and Resource Location"
-    ]
-}
+        },//end 02_chapter, "DNS and Resource Location"
+        {
+            number: 3,
+            name: "",
+            section: [
+                {
+                    name: "",
+                }
+            ]
+        },
+    ]//end 'chapters'
+})
 
     
 
