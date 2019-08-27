@@ -833,17 +833,42 @@
                                 }
                             ]
                         }
-                    ],//end sections
-                    examples: [
+                    ],//end lesson sections
+                },
+                {
+                    name: "The DNS in C#",
+                    desc: "",
+                    notes: [
+                        "",
+                    ],
+                    sections: [
                         {
-                            number: 1,
-                            section: "The URL as a sub-type of the URI",
-                            name: "build a URI",
-                            desc: "use 'public Uri GetSimpleUri()', and create a URI instance; the factory removes the necessity for developers to keep the fine details of 'delimiters, prefixes, and suffixes' in our heads",
-                            result: "http://packt.com/",
-                            takeaway: "use the 'constructor overloads' whenever possible; shrinks 'code height' and makes our intentions explicit when instantiating - be more explicit in code when possible."
+                            name: "default",
+                            desc: "",
+                            notes: [
+                                "",
+                            ]
                         }
                     ]
+                }
+            ],// end chapter sections
+            examples: [
+                {
+                    number: 1,
+                    section: "The URL as a sub-type of the URI",
+                    name: "build a URI",
+                    desc: "use 'public Uri GetSimpleUri()', and create a URI instance; the factory removes the necessity for developers to keep the fine details of 'delimiters, prefixes, and suffixes' in our heads",
+                    result: "http://packt.com/",
+                    takeaway: "use the 'constructor overloads' whenever possible; shrinks 'code height' and makes our intentions explicit when instantiating - be more explicit in code when possible."
+                },
+                {
+                    number: 2,
+                    section: "The DNS in C#",
+                    subSection: "default",
+                    name: "identify underlying IP address",
+                    desc: "use the static method Dns.GetHostEntry('domain'); to reveal IP assocaited with domain-name from input",
+                    result: "",
+                    takeaway: "",
                 }
             ]
         },//end 02_chapter, "DNS and Resource Location"
