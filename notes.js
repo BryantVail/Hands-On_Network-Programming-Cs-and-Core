@@ -844,6 +844,39 @@
                             takeaway: "use the 'constructor overloads' whenever possible; shrinks 'code height' and makes our intentions explicit when instantiating - be more explicit in code when possible."
                         }
                     ]
+                },
+                {
+                    name: "The DNS in C#",
+                    desc: ".NET Core 'Dns' class, under 'System.Net' namespace; directory information access returned by the nearest 'downstream' name server capable of resolving the given name.",
+                    notes: [
+                        "Its occasionally necessary to identify the 'underlying' IP for a domainName from within the context of the software we build.",
+                        "IPHostEntry class: all relevant directory info of a DNS entry- otherwise an array of IP addresses registered to resolve requests against the domain name; IPs mapped to the name (domain name)."
+                    ],
+                    sections: [
+                        {
+                            name: "",
+                            desc: "",
+                            notes: [
+                                "",
+                            ],
+                            aspects: [
+                                {
+                                    name: "",
+                                    desc: ""
+                                }
+                            ]
+                        }
+                    ],
+                    examples: [
+                        {
+                            number: 1,
+                            section: "Open",
+                            name: "DnsTestProgram",
+                            desc: "obtain IPs associated with a 'domain name'.",
+                            result: "",
+                            takeaway: ""
+                        }
+                    ]
                 }
             ]
         },//end 02_chapter, "DNS and Resource Location"
