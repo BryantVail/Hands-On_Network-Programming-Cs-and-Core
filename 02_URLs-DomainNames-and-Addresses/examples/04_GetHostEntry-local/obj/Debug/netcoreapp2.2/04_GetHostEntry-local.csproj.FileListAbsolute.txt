@@ -1,0 +1,11 @@
+C:\Users\bvail\Documents\GitHub\Hands-On_Network-Programming-Cs-and-Core\02_URLs-DomainNames-and-Addresses\examples\04_GetHostEntry-local\obj\Debug\netcoreapp2.2\04_GetHostEntry-local.csprojAssemblyReference.cache
+C:\Users\bvail\Documents\GitHub\Hands-On_Network-Programming-Cs-and-Core\02_URLs-DomainNames-and-Addresses\examples\04_GetHostEntry-local\obj\Debug\netcoreapp2.2\04_GetHostEntry-local.csproj.CoreCompileInputs.cache
+C:\Users\bvail\Documents\GitHub\Hands-On_Network-Programming-Cs-and-Core\02_URLs-DomainNames-and-Addresses\examples\04_GetHostEntry-local\obj\Debug\netcoreapp2.2\04_GetHostEntry-local.AssemblyInfoInputs.cache
+C:\Users\bvail\Documents\GitHub\Hands-On_Network-Programming-Cs-and-Core\02_URLs-DomainNames-and-Addresses\examples\04_GetHostEntry-local\obj\Debug\netcoreapp2.2\04_GetHostEntry-local.AssemblyInfo.cs
+C:\Users\bvail\Documents\GitHub\Hands-On_Network-Programming-Cs-and-Core\02_URLs-DomainNames-and-Addresses\examples\04_GetHostEntry-local\bin\Debug\netcoreapp2.2\04_GetHostEntry-local.deps.json
+C:\Users\bvail\Documents\GitHub\Hands-On_Network-Programming-Cs-and-Core\02_URLs-DomainNames-and-Addresses\examples\04_GetHostEntry-local\bin\Debug\netcoreapp2.2\04_GetHostEntry-local.runtimeconfig.json
+C:\Users\bvail\Documents\GitHub\Hands-On_Network-Programming-Cs-and-Core\02_URLs-DomainNames-and-Addresses\examples\04_GetHostEntry-local\bin\Debug\netcoreapp2.2\04_GetHostEntry-local.runtimeconfig.dev.json
+C:\Users\bvail\Documents\GitHub\Hands-On_Network-Programming-Cs-and-Core\02_URLs-DomainNames-and-Addresses\examples\04_GetHostEntry-local\bin\Debug\netcoreapp2.2\04_GetHostEntry-local.dll
+C:\Users\bvail\Documents\GitHub\Hands-On_Network-Programming-Cs-and-Core\02_URLs-DomainNames-and-Addresses\examples\04_GetHostEntry-local\bin\Debug\netcoreapp2.2\04_GetHostEntry-local.pdb
+C:\Users\bvail\Documents\GitHub\Hands-On_Network-Programming-Cs-and-Core\02_URLs-DomainNames-and-Addresses\examples\04_GetHostEntry-local\obj\Debug\netcoreapp2.2\04_GetHostEntry-local.dll
+C:\Users\bvail\Documents\GitHub\Hands-On_Network-Programming-Cs-and-Core\02_URLs-DomainNames-and-Addresses\examples\04_GetHostEntry-local\obj\Debug\netcoreapp2.2\04_GetHostEntry-local.pdb

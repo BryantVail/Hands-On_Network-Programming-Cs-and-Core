@@ -837,20 +837,149 @@
                 },
                 {
                     name: "The DNS in C#",
-                    desc: "",
+                    desc: "System.Net Dns Class",
                     notes: [
-                        "",
+                        "https://fun.with.dns.com:5001/api/values/1",
                     ],
                     sections: [
                         {
                             name: "default",
                             desc: "",
                             notes: [
-                                "",
+                                "IPHostEntry",
+                            ],
+                            aspects: [
+                                {
+                                    name: "hosts file",
+                                    desc: "serves as the first stop on any outbound requests for a network resource addressed by a host name; computer's internal name server.",
+                                    notes: [
+                                        "can intercept the 'host entry lookup' locally by modifying your computer's 'hosts file'.",
+                                        "can be used to direct traffic 'any way you'd like'",
+                                        "space separated values (2), 1 couple on each line"
+                                    ],
+                                    aspects: [
+                                        {
+                                            name: "location",
+                                            aspects: [
+                                                {
+                                                    name: "Windows",
+                                                    desc: "C:\\Windows\\System32\\drivers\\etc\\hosts\\",
+                                                    notes: [
+                                                        "no file extension",
+                                                        
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            name: "Further Exploring Dns class",
+                            desc: 
+                                "provides flexibility of being able to access and leverage alternative hardware resources for a given request in the event that one of the registered addresses is unresponsive.",
+                            aspects: [
+                                {
+                                    name: "add another IP & still associate domain"
+                                },
                             ]
                         }
                     ]
-                }
+                },
+                {
+                    name: "Summary",
+                    desc: "",
+                    notes: [
+                        "standardization",
+                        "locating resources",
+                        "DNS; human-readable addressing schemes, URLs & URIs.",
+                        "Hosts file",
+                        "create URLs",
+                        "Dns.GetHostEntry",
+                        "<IPHostEntry>.HostName",
+                        "<IPHostEntry>.AddressList",
+                    ],
+                    aspects: [
+                        {
+                            name: "",
+                            desc: "",
+                        }
+                    ]
+                },//end summary
+                {
+                    name: "Questions",
+                    questions: [
+                        {
+                            question: "what are three characteristics network engineers seek to achieve for long-term viability of a network addressing standard?",
+                            answers: [
+
+                            ]
+                        },
+                        {
+                            question: "how did telecom engineers sacrifice the maximum possible scale of telecom networks to achieve higher routing performance?",
+                            answers: [
+                                {
+                                    answer: "the area code",
+                                    desc: "area codes shifted much of the overhead by using the first part of the address as a way to organize endpoints in different sub-networks"
+                                }
+                            ]
+                        },
+                        {
+                            question: "what are the phone number and phone book of the modern internet?",
+                            answers: [
+                                {
+                                    key: "phone number",
+                                    value: "ip address"
+                                },
+                                {
+                                    key: "phone book",
+                                    value: "dns"
+                                }
+                            ]
+                        },
+                        {
+                            question: "how does a URL locate resources on the web?",
+                            answers: [
+                                "a url operates within an environment that parses the parts of a URL to find the host, use authority if necessary, execute the path at the host, navigate to the fragment if included",
+                            ]
+                        },
+                        {
+                            question: "what are the valid components of a URL? Which are optional? ",
+                            answers: [
+                                "scheme",
+                                "authority, (optional)",
+                                "'path' to resource",
+                                "'?'{query}",
+                                "'#'{frag}, optional",
+                                "scheme:[//authority/]path[?query][#fragment]",
+                            ]
+                        },
+                        {
+                            question: "what is a 'fully qualified domain name'?",
+                            answers: [
+                                {
+                                    name: "hostname",
+                                    desc: "",
+                                },
+                                {
+                                    name: "domain name",
+                                    desc: ""
+                                },
+                                {
+                                    name: "top-level-domain",
+                                    desc: "first-level set, or generic top-level domains; com, info, net, edu, org."
+                                }
+                            ]
+                        },
+                        {
+                            question: "how is a device given a domain name?",
+                            answers: [
+                                "valid domain names are added to the distributed registry hosted by authoritative servers."
+                            ]
+                        }
+                    ]
+                }//end questions
             ],// end chapter sections
             examples: [
                 {
@@ -867,7 +996,8 @@
                     subSection: "default",
                     name: "identify underlying IP address",
                     desc: "use the static method Dns.GetHostEntry('domain'); to reveal IP assocaited with domain-name from input",
-                    result: "",
+                    result: 
+                        "[google.com, 2607:f8b0:4002:812::200e, 172.217.164.78]",
                     takeaway: "",
                 }
             ]
@@ -877,10 +1007,382 @@
             name: "",
             section: [
                 {
-                    name: "",
+                    name: "Communication Protocols (intro)",
+                    desc: "",
+                    topics: [
+                        "The origin of the current standard for network architecture and a brief history of it, as well as some background on the organization that is responsible for it.",
+                        "how app code interacts with network resources through the application layer and what communication standards are provided for that layer.",
+                        "how data is communicated out to, or read from, the network on the transport layer of the network architecture standard."
+                    ],
+                    sections: [
+                        {
+                            name: "default",
+                            desc: "common architecture of networks",
+                            notes: [
+                                "standardization",
+                                "who"
+                            ],
+                            aspects: [
+                                {
+                                    name: "",
+                                    desc: "",
+
+                                }
+                            ]
+                        },//end default
+                        {
+                            name: "technical requirements",
+                            desc: "NET Core 2.1 SDK",
+                        },//end "technical requirements"
+                        {
+                            name: "The Open systems Interconnection network stack",
+                            sections: [
+                                {
+                                    name: "default",
+                                    desc: "",
+                                    notes: [
+                                        "several steps in the process of sending or receiving a resource from a remote source over a network",
+                                        "OSI Model; Network Stack"
+                                    ]
+                                },
+                                {
+                                    name: "What exactly is the Open Systems Interconnection?",
+                                    desc: "",
+                                    notes: [
+                                        "conceptual and abstract",
+                                        "formalized in 1984",
+
+                                    ],
+                                    aspects: [
+                                        {
+                                            name: "origins of the OSI",
+                                            desc: "",
+                                            notes: [
+                                                "the first networks needed standardization",
+                                                "International Organization for Standardization (ISO)",
+                                                "Greek isos (ISO); meaning equal, speaking to the goal of equal understanding"
+                                            ],
+                                            aspects: [
+                                                {
+                                                    name: "Interational Organization for Standardization (ISO)",
+                                                    desc: "",
+                                                    notes: [
+                                                        "",
+                                                    ]
+                                                },
+                                                {
+                                                    name: "International Telegraph and Telephone Consultive Committee (CCITT fr.)",
+                                                    desc: "",
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            name: "The Basic Reference Model",
+                                            desc: "ISO-7498",
+                                            notes: [
+                                                "",
+                                            ],
+                                            aspects: [
+                                                {
+                                                    name: "Abstract Basic Reference Model for networking",
+                                                    desc: "defines network comm streams, implemented by a compliant device on a network- in a hierarchy of Seven Distinct Conceptual Layers.",
+                                                    notes: [
+                                                        "from physical to how high-level application might use a given resource distributed over a network"
+                                                    ],
+                                                    aspects: [
+                                                        {
+                                                            name: "headers and footers",
+                                                            desc: "as data moves through the layer of the stack, each layer wraps the packet in its own headers & footers to be parsed by the next layer/recipient device.",
+                                                            aspects: [
+                                                                "originating layer in the stack",
+                                                                "how to parse the packet",
+                                                                {
+                                                                    name: "Protocol Data Unit (PDU)",
+                                                                    desc: "headers & footers"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    name: "Protocols",
+                                                    desc: "list of protocols standardized for use by systems that implement the reference mdoel",
+                                                    notes: [
+                                                        "these protocols assume smooth interaction down the stack of the originating host, then back up the stack on the remote host.",
+                                                        "protocol determines how the receiving entity should process the data",
+                                                        "once the message has bubbled back up the stack to the target layer of the remote host, the protocol determines how the receiving entity should process the data."
+                                                    ],
+                                                    aspects: [
+                                                        {
+                                                            name: "data transmission through the OSI Stack",
+                                                            desc: "",
+                                                            aspects: [
+                                                                {
+                                                                    name: "an entity on the originating host creates a data packet (PDU) at a given layer in the network stack 'N'."
+                                                                },
+                                                                {
+                                                                    name: "Originating layer passes it down the stack by leveraging 'the service definition' of the layer immediately beneath it."
+                                                                },
+                                                                {
+                                                                    name: "Lower Layers receive the PDU, each wrapping it in a set of 'headers and footers', to be parsed by the corresponding layer on the remote host.",
+
+                                                                },
+                                                                {
+                                                                    name: "Once the PDU has been wrapped in headers & footers by the bottom most layer of the stack- it is transmitted to the remote host."
+                                                                },
+                                                                {
+                                                                    name: "each layer of the stack on the remote host removes the headers and footers applied by the corresponding layer of the originating host, bubbling the PDU up through the stack."
+                                                                },
+                                                                {
+                                                                    name: "The PDU is received by layer 'N' on the remote host",
+                                                                    desc: "receiving layer parses the data of the PDU according to the specs of a protocol for layer 'N'- specified by the originating host."
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    name: "the layers of the network stack",
+                                    desc: "",
+                                    notes: [
+                                        "the model is abstract; the model is a reference",
+                                        "further down the stack, the closer to physical data transmission."
+
+                                    ],
+                                    aspects: [
+                                        {
+                                            name: "The 'Host/Media' Distinction",
+                                            desc: "",
+                                            notes: [
+                                                "host layer and media layer"
+                                            ],
+                                            aspects: [
+                                                {
+                                                    name: "host layer",
+                                                    desc: "specific to a given host; trying to communicate to an endpoint over the network.",
+                                                    notes: [
+                                                        "the four higher levels of the model",
+                                                    ],
+                                                    aspects: [
+                                                        {
+                                                            name: "bundling application data",
+                                                            desc: "",
+                                                        },
+                                                        {
+                                                            name: "specifying encoding and reliability expectations"
+                                                        },
+                                                        {
+                                                            name: "methods for sending out a PDU to a given target"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    name: "media layer",
+                                                    desc: "the physical implementation of the network components between two hosts.",
+                                                    notes: [
+                                                        "typically implemented on the hardware level.",
+                                                        "C# provides abstractions that encapsulate and represent the functionality of entities in this layer- making the subject relevant."
+                                                    ],
+                                                    aspects: [
+                                                        {
+                                                            name: "",
+                                                            desc: "",
+                                                            notes: [
+                                                                "",
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },//end lesson.section The 'Host/Media' Distinction
+                                        {
+                                            name: "OSI Layers",
+                                            aspects: [
+                                                {
+                                                    name: "The Application Layer",
+                                                    desc: "highest level interface for interaction with the network communication; business application software.",
+                                                    notes: [
+                                                        "the layer most developers interact with",
+                                                        "access point between end-user and the OSI network stack."
+                                                    ],
+
+                                                },
+                                                {
+                                                    name: "Presentation Layer",
+                                                    desc: "provides context for application layer entites from different hosts to mutually interact with a PDU (Protocol Data Unit)",
+                                                    notes: [
+                                                        "responsible for describing how data passed from the application layer should be interpreted on the other side of a given data transaction.",
+                                                        "abstracts away the encoding or serialization of PDUs from the higher-level 'business logic' of application layer entities.",
+                                                        "mapping from platform-specific representations to platform-agnostic descriptions of the representation."
+                                                    ]
+                                                },
+                                                {
+                                                    name: "Session Layer",
+                                                    desc: "responsible for 'establishing, maintaining, resuming, and terminating' an active communication session between two hosts on a network.",
+                                                    notes: [
+                                                        "full-duplex, half-duplex, simplex communications",
+                                                        "full & half-duplex are most popular",
+                                                        ""
+                                                    ],
+                                                    aspects: [
+                                                        {
+                                                            name: "full-duplex",
+                                                            desc: "both parties can communicate with one another simultaneously; efficient data transfer.",
+                                                            notes: [
+                                                                "telephone call mirrors this concept",
+                                                                "efficient data transfer",
+                                                                "reliability"
+                                                            ]
+                                                        },
+                                                        {
+                                                            name: "half-duplex",
+                                                            desc: "One party communicating at a time; reliability over limited bandwidth.",
+                                                            notes: [
+                                                                "walkie-talkie",
+                                                                ""
+                                                            ]
+                                                        },
+                                                        {
+                                                            name: "simplex communication",
+                                                            desc: "sender & receiver; One party only is sending to a single receiver.",
+                                                            notes: [
+                                                                "television",
+                                                                "duplex is two simplex connections"
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    name: "The Transport Layer",
+                                                    desc: "designed to interact with other hosts and the network entities between",
+                                                    notes: [
+                                                        "encoded data from the presentation layer is evaluated & broken apart",
+                                                        "cuts the data into segments of 'otherwise useless streams of binary'- to be re-assembled.",
+                                                        "error detection & recovery- determined by the protocol.",
+                                                        "lowest layer of the 'host' layers; the remaining layers are the 'Media' layers."
+                                                    ]
+                                                },
+                                                {
+                                                    name: "network layer",
+                                                    desc: "",
+                                                    notes: [
+                                                        "interactions managed over 'network topology'",
+                                                        "address resolution",
+                                                        "routing to target host",
+                                                        "message delivery: based on constraints or the resource availability",
+                                                        "applies the transport protocol",
+
+                                                    ],
+                                                    aspects: [
+                                                        {
+                                                            name: "",
+                                                            desc: "",
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    name: "data link layer",
+                                                    desc: "",
+                                                    notes: [
+                                                        "facilitates the 'actual' data transfer of physical medium",
+                                                        "half-duplex: this layer would be responsible for shutting down transfer of data in one direction when transfer of the other direction is being executed.",
+                                                        "point-to-point is the most common protocol for this layer"
+                                                    ],
+                                                    aspects: [
+                                                        {
+                                                            name: "sub-layers",
+                                                            desc: "Institution of Electrical and Electronics Engineers (IEEE) standard 802",
+                                                            aspects: [
+                                                                {
+                                                                    name: "Medium Access-Control (MAC)",
+                                                                    desc: "controls who can transmit data through the data-layer entity and how that data CAN be transmitted.",
+                                                                },
+                                                                {
+                                                                    name: "Logical Link Control (LLC)",
+                                                                    desc: "encapsulates the logical protocols of network interaction; the interface the provides the entities links as a set of 'asbstract protocol operations'.",
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    name: "physical layer",
+                                                    desc: "modulates voltage, timing signals, timing wireless frequency; transmitting raw unstructured data.",
+                                                    notes: [
+                                                        "",
+                                                    ],
+                                                    aspects: [
+                                                        {
+                                                            name: "",
+                                                            desc: "",
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },//end OSI Layers
+                                    ]
+                                },
+                                {
+                                    name: "putting it all together",
+                                    desc: "",
+                                    notes: [
+                                        "",
+                                    ],
+                                    aspects: [
+                                        {
+                                            name: "",
+                                            desc: "",
+                                        }
+                                    ]
+                                }
+                            ]
+                        },//end 'The Open systems Interconnection network stack'
+                        {
+                            name: "The application layer",
+                            desc: "where the vast majority of day-to-day network programming will take place.",
+                            section: [
+                                {
+                                    name: "default",
+                                    desc: "",
+                                },
+                                {
+                                    name: "The most common layer in the stack",
+                                    desc: "",
+                                    aspects: [
+                                        {
+                                            name: "why",
+                                            desc: "application layer serves as the 'gateway' to network activities for your business logic.",
+
+                                        }
+                                    ]
+                                },
+                                {
+                                    name: "HTTP - application to application communication",
+                                    desc: "",
+                                    notes: [
+                                        "",
+                                    ],
+                                    aspects: [
+                                        {
+                                            name: "",
+                                            desc: "",
+                                            notes: [
+                                                "",
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
                 }
             ]
-        },
+        },//end Communication Protocols, chapter 3
     ]//end 'chapters'
 })
 
