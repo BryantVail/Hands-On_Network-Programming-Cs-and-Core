@@ -1,0 +1,11 @@
+C:\Users\bvail\Documents\GitHub\Hands-On_Network-Programming-Cs-and-Core\02_URLs-DomainNames-and-Addresses\examples\02_Dns-GetHostEntry\bin\Debug\netcoreapp2.2\02_Dns-GetHostEntry.deps.json
+C:\Users\bvail\Documents\GitHub\Hands-On_Network-Programming-Cs-and-Core\02_URLs-DomainNames-and-Addresses\examples\02_Dns-GetHostEntry\bin\Debug\netcoreapp2.2\02_Dns-GetHostEntry.runtimeconfig.json
+C:\Users\bvail\Documents\GitHub\Hands-On_Network-Programming-Cs-and-Core\02_URLs-DomainNames-and-Addresses\examples\02_Dns-GetHostEntry\bin\Debug\netcoreapp2.2\02_Dns-GetHostEntry.runtimeconfig.dev.json
+C:\Users\bvail\Documents\GitHub\Hands-On_Network-Programming-Cs-and-Core\02_URLs-DomainNames-and-Addresses\examples\02_Dns-GetHostEntry\bin\Debug\netcoreapp2.2\02_Dns-GetHostEntry.dll
+C:\Users\bvail\Documents\GitHub\Hands-On_Network-Programming-Cs-and-Core\02_URLs-DomainNames-and-Addresses\examples\02_Dns-GetHostEntry\bin\Debug\netcoreapp2.2\02_Dns-GetHostEntry.pdb
+C:\Users\bvail\Documents\GitHub\Hands-On_Network-Programming-Cs-and-Core\02_URLs-DomainNames-and-Addresses\examples\02_Dns-GetHostEntry\obj\Debug\netcoreapp2.2\02_Dns-GetHostEntry.csprojAssemblyReference.cache
+C:\Users\bvail\Documents\GitHub\Hands-On_Network-Programming-Cs-and-Core\02_URLs-DomainNames-and-Addresses\examples\02_Dns-GetHostEntry\obj\Debug\netcoreapp2.2\02_Dns-GetHostEntry.csproj.CoreCompileInputs.cache
+C:\Users\bvail\Documents\GitHub\Hands-On_Network-Programming-Cs-and-Core\02_URLs-DomainNames-and-Addresses\examples\02_Dns-GetHostEntry\obj\Debug\netcoreapp2.2\02_Dns-GetHostEntry.AssemblyInfoInputs.cache
+C:\Users\bvail\Documents\GitHub\Hands-On_Network-Programming-Cs-and-Core\02_URLs-DomainNames-and-Addresses\examples\02_Dns-GetHostEntry\obj\Debug\netcoreapp2.2\02_Dns-GetHostEntry.AssemblyInfo.cs
+C:\Users\bvail\Documents\GitHub\Hands-On_Network-Programming-Cs-and-Core\02_URLs-DomainNames-and-Addresses\examples\02_Dns-GetHostEntry\obj\Debug\netcoreapp2.2\02_Dns-GetHostEntry.dll
+C:\Users\bvail\Documents\GitHub\Hands-On_Network-Programming-Cs-and-Core\02_URLs-DomainNames-and-Addresses\examples\02_Dns-GetHostEntry\obj\Debug\netcoreapp2.2\02_Dns-GetHostEntry.pdb

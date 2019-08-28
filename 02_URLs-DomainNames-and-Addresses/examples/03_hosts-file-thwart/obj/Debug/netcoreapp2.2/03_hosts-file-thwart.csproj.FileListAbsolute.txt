@@ -1,0 +1,14 @@
+C:\Users\bvail\Documents\GitHub\Hands-On_Network-Programming-Cs-and-Core\02_URLs-DomainNames-and-Addresses\examples\03_hosts-file-thwart\bin\Debug\netcoreapp2.2\03_hosts-file-thwart.deps.json
+C:\Users\bvail\Documents\GitHub\Hands-On_Network-Programming-Cs-and-Core\02_URLs-DomainNames-and-Addresses\examples\03_hosts-file-thwart\bin\Debug\netcoreapp2.2\03_hosts-file-thwart.runtimeconfig.json
+C:\Users\bvail\Documents\GitHub\Hands-On_Network-Programming-Cs-and-Core\02_URLs-DomainNames-and-Addresses\examples\03_hosts-file-thwart\bin\Debug\netcoreapp2.2\03_hosts-file-thwart.runtimeconfig.dev.json
+C:\Users\bvail\Documents\GitHub\Hands-On_Network-Programming-Cs-and-Core\02_URLs-DomainNames-and-Addresses\examples\03_hosts-file-thwart\bin\Debug\netcoreapp2.2\03_hosts-file-thwart.dll
+C:\Users\bvail\Documents\GitHub\Hands-On_Network-Programming-Cs-and-Core\02_URLs-DomainNames-and-Addresses\examples\03_hosts-file-thwart\bin\Debug\netcoreapp2.2\03_hosts-file-thwart.pdb
+C:\Users\bvail\Documents\GitHub\Hands-On_Network-Programming-Cs-and-Core\02_URLs-DomainNames-and-Addresses\examples\03_hosts-file-thwart\obj\Debug\netcoreapp2.2\03_hosts-file-thwart.csprojAssemblyReference.cache
+C:\Users\bvail\Documents\GitHub\Hands-On_Network-Programming-Cs-and-Core\02_URLs-DomainNames-and-Addresses\examples\03_hosts-file-thwart\obj\Debug\netcoreapp2.2\03_hosts-file-thwart.csproj.CoreCompileInputs.cache
+C:\Users\bvail\Documents\GitHub\Hands-On_Network-Programming-Cs-and-Core\02_URLs-DomainNames-and-Addresses\examples\03_hosts-file-thwart\obj\Debug\netcoreapp2.2\03_hosts-file-thwart.RazorAssemblyInfo.cache
+C:\Users\bvail\Documents\GitHub\Hands-On_Network-Programming-Cs-and-Core\02_URLs-DomainNames-and-Addresses\examples\03_hosts-file-thwart\obj\Debug\netcoreapp2.2\03_hosts-file-thwart.RazorAssemblyInfo.cs
+C:\Users\bvail\Documents\GitHub\Hands-On_Network-Programming-Cs-and-Core\02_URLs-DomainNames-and-Addresses\examples\03_hosts-file-thwart\obj\Debug\netcoreapp2.2\03_hosts-file-thwart.AssemblyInfoInputs.cache
+C:\Users\bvail\Documents\GitHub\Hands-On_Network-Programming-Cs-and-Core\02_URLs-DomainNames-and-Addresses\examples\03_hosts-file-thwart\obj\Debug\netcoreapp2.2\03_hosts-file-thwart.AssemblyInfo.cs
+C:\Users\bvail\Documents\GitHub\Hands-On_Network-Programming-Cs-and-Core\02_URLs-DomainNames-and-Addresses\examples\03_hosts-file-thwart\obj\Debug\netcoreapp2.2\03_hosts-file-thwart.RazorTargetAssemblyInfo.cache
+C:\Users\bvail\Documents\GitHub\Hands-On_Network-Programming-Cs-and-Core\02_URLs-DomainNames-and-Addresses\examples\03_hosts-file-thwart\obj\Debug\netcoreapp2.2\03_hosts-file-thwart.dll
+C:\Users\bvail\Documents\GitHub\Hands-On_Network-Programming-Cs-and-Core\02_URLs-DomainNames-and-Addresses\examples\03_hosts-file-thwart\obj\Debug\netcoreapp2.2\03_hosts-file-thwart.pdb
