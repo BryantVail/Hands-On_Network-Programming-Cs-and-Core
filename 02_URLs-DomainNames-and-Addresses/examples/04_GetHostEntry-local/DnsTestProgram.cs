@@ -5,11 +5,17 @@ namespace DnsTest
 {
   public class DnsTestProgram
   {
-    static void Main(string[] args)
+    public static void Main(string[] args)
     {
       var domainEntry = Dns.GetHostEntry("fun.with.dns.com");
 
       Console.WriteLine(domainEntry.HostName);
+
+      for (int i = 0; i < domainEntry.AddressList.Length; i++)
+      {
+        var ip = domainEntry.AddressList.GetValue(i);
+        Console.WriteLine(ip);
+      }
 
       foreach (var ip in domainEntry.AddressList)
       {

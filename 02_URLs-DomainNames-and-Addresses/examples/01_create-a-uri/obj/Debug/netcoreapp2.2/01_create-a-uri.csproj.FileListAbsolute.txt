@@ -1,0 +1,11 @@
+C:\Users\bvail\Documents\GitHub\Hands-On_Network-Programming-Cs-and-Core\02_URLs-DomainNames-and-Addresses\examples\01_create-a-uri\obj\Debug\netcoreapp2.2\01_create-a-uri.csprojAssemblyReference.cache
+C:\Users\bvail\Documents\GitHub\Hands-On_Network-Programming-Cs-and-Core\02_URLs-DomainNames-and-Addresses\examples\01_create-a-uri\obj\Debug\netcoreapp2.2\01_create-a-uri.csproj.CoreCompileInputs.cache
+C:\Users\bvail\Documents\GitHub\Hands-On_Network-Programming-Cs-and-Core\02_URLs-DomainNames-and-Addresses\examples\01_create-a-uri\obj\Debug\netcoreapp2.2\01_create-a-uri.AssemblyInfoInputs.cache
+C:\Users\bvail\Documents\GitHub\Hands-On_Network-Programming-Cs-and-Core\02_URLs-DomainNames-and-Addresses\examples\01_create-a-uri\obj\Debug\netcoreapp2.2\01_create-a-uri.AssemblyInfo.cs
+C:\Users\bvail\Documents\GitHub\Hands-On_Network-Programming-Cs-and-Core\02_URLs-DomainNames-and-Addresses\examples\01_create-a-uri\bin\Debug\netcoreapp2.2\01_create-a-uri.deps.json
+C:\Users\bvail\Documents\GitHub\Hands-On_Network-Programming-Cs-and-Core\02_URLs-DomainNames-and-Addresses\examples\01_create-a-uri\bin\Debug\netcoreapp2.2\01_create-a-uri.runtimeconfig.json
+C:\Users\bvail\Documents\GitHub\Hands-On_Network-Programming-Cs-and-Core\02_URLs-DomainNames-and-Addresses\examples\01_create-a-uri\bin\Debug\netcoreapp2.2\01_create-a-uri.runtimeconfig.dev.json
+C:\Users\bvail\Documents\GitHub\Hands-On_Network-Programming-Cs-and-Core\02_URLs-DomainNames-and-Addresses\examples\01_create-a-uri\bin\Debug\netcoreapp2.2\01_create-a-uri.dll
+C:\Users\bvail\Documents\GitHub\Hands-On_Network-Programming-Cs-and-Core\02_URLs-DomainNames-and-Addresses\examples\01_create-a-uri\bin\Debug\netcoreapp2.2\01_create-a-uri.pdb
+C:\Users\bvail\Documents\GitHub\Hands-On_Network-Programming-Cs-and-Core\02_URLs-DomainNames-and-Addresses\examples\01_create-a-uri\obj\Debug\netcoreapp2.2\01_create-a-uri.dll
+C:\Users\bvail\Documents\GitHub\Hands-On_Network-Programming-Cs-and-Core\02_URLs-DomainNames-and-Addresses\examples\01_create-a-uri\obj\Debug\netcoreapp2.2\01_create-a-uri.pdb

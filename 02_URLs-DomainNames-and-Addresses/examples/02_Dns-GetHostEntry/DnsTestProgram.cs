@@ -26,9 +26,10 @@ namespace DnsTest
         // 173.194.219.100
         // 173.194.219.139
         // 173.194.219.138
+        Console.ReadKey();
       }
 
-      Console.ReadKey();
+
       // Thread.Sleep(10000);
     }//end Main
   }
