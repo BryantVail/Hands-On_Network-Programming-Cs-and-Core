@@ -979,26 +979,39 @@
                             ]
                         }
                     ]
-                }//end questions
-            ],// end chapter sections
-            examples: [
-                {
-                    number: 1,
-                    section: "The URL as a sub-type of the URI",
-                    name: "build a URI",
-                    desc: "use 'public Uri GetSimpleUri()', and create a URI instance; the factory removes the necessity for developers to keep the fine details of 'delimiters, prefixes, and suffixes' in our heads",
-                    result: "http://packt.com/",
-                    takeaway: "use the 'constructor overloads' whenever possible; shrinks 'code height' and makes our intentions explicit when instantiating - be more explicit in code when possible."
                 },
                 {
-                    number: 2,
-                    section: "The DNS in C#",
-                    subSection: "default",
-                    name: "identify underlying IP address",
-                    desc: "use the static method Dns.GetHostEntry('domain'); to reveal IP assocaited with domain-name from input",
-                    result: 
-                        "[google.com, 2607:f8b0:4002:812::200e, 172.217.164.78]",
-                    takeaway: "",
+                    name: "The DNS in C#",
+                    desc: ".NET Core 'Dns' class, under 'System.Net' namespace; directory information access returned by the nearest 'downstream' name server capable of resolving the given name.",
+                    notes: [
+                        "Its occasionally necessary to identify the 'underlying' IP for a domainName from within the context of the software we build.",
+                        "IPHostEntry class: all relevant directory info of a DNS entry- otherwise an array of IP addresses registered to resolve requests against the domain name; IPs mapped to the name (domain name)."
+                    ],
+                    sections: [
+                        {
+                            name: "",
+                            desc: "",
+                            notes: [
+                                "",
+                            ],
+                            aspects: [
+                                {
+                                    name: "",
+                                    desc: ""
+                                }
+                            ]
+                        }
+                    ],
+                    examples: [
+                        {
+                            number: 1,
+                            section: "Open",
+                            name: "DnsTestProgram",
+                            desc: "obtain IPs associated with a 'domain name'.",
+                            result: "",
+                            takeaway: ""
+                        }
+                    ]
                 }
             ]
         },//end 02_chapter, "DNS and Resource Location"
